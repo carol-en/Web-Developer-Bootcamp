@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT FUNCTIONS</title>
+</head>
+<body>
+<H1>JAVASCRIPT FUNCTIONS</H1>
+</body>
+
+<script type="text/javascript">
+	
+	function IconsForHire() { // Function declaration
+		alert("Hello there!");
+		var name = prompt("What is your name?");
+		alert("your name is" + " " + name);
+		return name; 
+	}
+
+
+	var Icons = function() { // Function expression
+		alert("Hello there!");
+		var name = prompt("What is your name?");
+		alert("your name is" + " " + name);
+		return name; 
+	}
+
+
+	function thePatriots(nombre) { //Function declaration
+		console.log("Hello there" + " " + nombre + "!");
+		return nombre;
+	}
+
+	var Patriot = function(name) { // Function expression
+		console.log("Hello there" + " " + nombre + "!");
+		return name;
+	}
+
+var person5 = "Naked Snake";
+
+	function greet(person1, person2, person3) { //Function declaration
+		var person6 = "Big Boss";
+		console.log("Hello there" + " " + person1);
+		console.log("Hello there" + " " + person2);
+		console.log("Hello there" + " " + person3);
+		console.log(person6);
+		console.log("These are all" + " " + person6 + "'s" + " " + "lovers");
+		console.log(person5 + " " + "is also" + " " + person6);
+	}
+
+	var greeting = function(person1, person2, person3) { // Function expression
+		var person6 = "Big Boss";
+		console.log("Hello there" + " " + person1);
+		console.log("Hello there" + " " + person2);
+		console.log("Hello there" + " " + person3);
+		console.log(person6);
+		console.log("These are all" + " " + person6 + "'s" + " " + "lovers");
+		console.log(person5 + " " + "is also" + " " + person6);
+
+	}
+
+	function Nay(code) { //Function declaration
+		return code;
+	}
+
+	var Nayy = function(code) { // Function expression
+		return code;
+	}
+
+	function math(plus) { //Function declaration
+		return plus + plus;
+	}
+
+	var matth = function(plus) { // Function expression
+		return plus + plus;
+	}
+
+	function mathToo(multi) { // Function declaration
+		return multi * multi;
+	}
+
+	var mathTooo = function(multi) { // Function  expression
+		return multi * multi;
+	}
+
+	function mathAlso(Oh) { // Function declaration
+		// var meh = Number(2);
+		var meh = "2";
+		return Oh * meh;
+	}
+
+	var mathAllso = function(Oh) { // Function expression
+		// var meh = Number(2);
+		var meh = "2";
+		return Oh * meh;
+	}
+
+	// PROBLEM SOLVING QUIZ
+
+	// isEven() write numerical function resulting in a true or false response if even or odd
+	// isEven(2) would be true while isEven(5) would be false
+
+	var ifEven = function(x) { // Return true or false for even and odd numbers
+			x = Number(x);
+				if (x % 2 === 0) {
+					return true;
+				}
+				return false;
+	}
+
+		function iifEven(x) { // Return true or false for even and odd numbers
+			x = Number(x);
+				if (x % 2 === 0) {
+					return true;
+				}
+				return false;
+	}
+
+	function iffEven(x) {
+		return x % 2 === 0;
+		}
+
+	// Factorial Function.
+	// 5! = 120
+	// 5 x (5 - 1) x (5 - 2) x (5 - 3) x (5 - 4)= 120
+	// 5 x 4 x 3 x 2 x 1 = 120 or 1 x 2 x 3 x 4 x 5 = 120
+	// end at 1 || start at 1
+
+	// Factorial Function for 5
+		function fact(X) {
+			var Start= 1;
+			// Start at 1, which then has to end at 5
+
+					for(var V = 1; V <= X; V++) {
+					// Use For Loop
+						Start = Start * V ;
+				}
+	// The answer/end result will be 120 
+			return Start;
+		}
+
+		// Factorial Function for 5
+		function fac(X) {
+		// End at 1, start with a var?
+		var Start = X;
+				for(var V = X-1; V >= 1; V--) {// Use a loop
+				Start = Start * V;
+				
+				}
+		// Return result, which should be 120
+		return Start;
+	}
+
+	// Kabab to Snake so 'This-is' to 'This_is'
+
+	function Snake(x) {
+		// Replace - to _
+		var change = x.replace(/-/gi, "_");
+		return "This" + change + "is" + change + "a" + change + "url";
+	}
+
+
+
+</script>
+
+</html>

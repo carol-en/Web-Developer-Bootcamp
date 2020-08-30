@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Change Color</title>
+
+	<style type="text/css">
+		.purple {
+			background: purple;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Button Change Color</h1>
+
+	<button>CLICK ME!</button>
+
+<script type="text/javascript">
+	console.log("CONNECTED!");
+
+	var button = document.querySelector("button");
+	// var isPurple = false;
+
+	// button.addEventListener("click", function() {
+	// 	if(isPurple) {
+	// 		document.body.style.backgroundColor = "white";
+	// 		// isPurple = false;
+	// 	} else {
+	// 		document.body.style.backgroundColor = "red";
+	// 		// isPurple = true;
+	// 	} // or this can be done:
+	// 	isPurple = !isPurple;
+	// });
+
+	// Alternate way to do it and make it short
+		// first comment out above and make style sheet + class with BG of purple.
+
+	button.addEventListener("click", function() { 
+		document.body.classList.toggle("purple");
+	});
+
+</script>
+
+
+</body>
+</html>

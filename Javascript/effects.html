@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Effects</title>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		
+		/*styling here*/
+
+		div {
+			width: 100px;
+			height: 100px;
+			margin: 20px;
+			background: teal;
+			float: left;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>jQuery Effects</h1>
+
+		<button>Click Me!!</button>
+
+			<div>I'd rather not fade</div>
+			<div>Please don't!!!</div>
+			<div>Someone please help!!</div>
+
+
+<script type="text/javascript">
+
+	// connected
+
+		$("button").on("click", function() {
+			$("div").slideToggle(500, function() {
+				 
+			});
+		});
+
+
+</script>
+
+</body>
+</html>

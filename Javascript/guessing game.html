@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing Game!</title>
+
+	<script type="text/javascript">
+		
+		// A guessing game
+
+		var stringNum = prompt("Guess a number?");
+		var num = Number(stringNum);
+
+		if(num === 15) {
+			alert("CONGRATS! You guessed right!")
+		}
+
+		if(num > 15) {
+			alert("Number too high, guess again.");
+		}
+
+		else {
+			alert("Number is too low, guess again");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

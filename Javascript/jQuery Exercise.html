@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Exercise</title>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h1>jQuery Exercise</h1>
+
+	<div>Div 1</div>
+	<div class="highlight">Div 2</div>
+	<div id="third">Div 3</div>
+	<div class="highlight">Div 4</div>
+
+<script type="text/javascript">	
+	// change div bgs purple
+	$("div").css("backgroundColor", "purple");
+
+	// change class hightlight widths 200px
+	$(".highlight").css("width", "200px");
+
+	// give id third an orange border
+	$("#third").css("border", "3px solid orange");
+
+	// bonus: change first div's color to pink
+	$("div:first-of-type").css("color", "pink");
+</script>
+
+</body>
+</html>

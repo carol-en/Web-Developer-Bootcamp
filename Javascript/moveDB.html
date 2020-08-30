@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MovieDB</title>
+	</head>
+
+		<body>
+			<h1>MovieDB</h1>
+		</body>
+	<script type="text/javascript">
+
+		console.log("CONNECTED");
+
+		var movies = [ 
+			{
+			Movie: "Wonder Woman",
+			Rating: "4.5 / 5",
+			Watched: true
+			},
+
+			{
+			Movie: "Aquaman",
+			Rating: "4.5/ 5",
+			Watched: true
+			},
+
+			{
+			Movie: "Into the Spider-Verse",
+			Rating: "5/5",
+			Watched: false
+			}, 
+
+			{
+			Movie: "Avengers: End Game",
+			Rating: "N/A",
+			Watched: false	
+			}
+		] // END OF MOVIES OBJECT
+
+		// PRINT OUT MOVIES, NAME, RATING, WHETHER IT WAS WATCHED OR NOT
+
+
+			function listOfFilms(movie) {
+				// LOOP TO START
+				for(i = 0; i < movie.length; i++) {
+						if(movie[i].Watched !== true) {
+							var wa = "You have not seen ";
+						} else{
+							var wa = "You have watched ";
+						}
+					//CONSOLE.LOG STUFF
+					console.log(wa + '"'+ movies[i].Movie + '"' + " " + "-" + " " + movies[i].Rating + " " + "stars");
+				}
+			}
+
+			listOfFilms(movies);
+				
+	console.log( " ");
+
+			movies.forEach(function(movie) {
+				var turn = "You have ";
+				if(movie.Watched === true) {
+					turn += "watched ";
+				} else {
+					turn += "not watched ";
+				}
+			turn += '"'+ movie.Movie + '"' + " - ";
+			turn += movie.Rating + " stars";
+			console.log(turn);
+
+			});
+
+	console.log( " ");
+
+			movies.forEach(function(movie) {
+				console.log(stringMovie(movie));
+			});
+
+			function stringMovie(movie) {
+				var turn = "You have ";
+				if(movie.Watched === true) {
+					turn += "watched ";
+				} else {
+					turn += "not watched ";
+				}
+			turn += '"'+ movie.Movie + '"' + " - ";
+			turn += movie.Rating + " stars";
+			return turn;
+		}
+
+	</script>
+	</html>

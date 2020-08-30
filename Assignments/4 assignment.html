@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form action="http://vvaytofall.tumblr.com" method="get">
+<div>
+	<label for="FirstName">First Name: </label>
+	<input type="text" id="FirstName" name="FirstName" placeholder="John" required>
+
+<label for="LastName">Last Name: </label>
+<input type="text" id="LastName" name="LastName" placeholder="Doe" required>
+
+</div>
+<div>Sex: 
+<label for="Male">Male </label>
+	<input type="radio" id="Male" name="Gender" value="MALE">
+
+<label for="Female">Female </label>
+	<input type="radio" id="Female" name="Gender" value="FEMALE">
+
+<label for="Other">Other</label>
+	<input type="radio" id="Other" name="Gender" value="OTHER">
+</div>
+
+<div>
+<label for="Email">Email:</label>
+	<input type="email" name="Email" id="Email" placeholder="john@gmail.com" required>
+
+<label for="password">Password: </label>
+	<input type="password" name="password" id="password" pattern=".{5,10}" required title="Password must be between 5 & 10  characters.">
+</div>
+<div>
+<label>
+ Birthday: 
+<select name="Month">
+	<option>Month</option>
+	<option value="Jan">January</option>
+	<option value="Mar">March</option>
+	<option value="Apr">April</option>
+</select>	
+
+<select name="Day">
+	<option>Day</option>
+	<option value="01">01</option>
+	<option  value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+</select>
+
+<select name="Year">
+	<option>Year</option>
+	<option value="90">1990</option>
+	<option value="92">1991</option>
+	<option value="92">1992</option>
+	<option value="93">1993</option>
+</select>
+</label>
+</div>
+<div>
+	<label>
+I agree to terms and conditions: <input type="checkbox" name="agreed" required>		
+	</label>
+</div>
+<div>
+<input type="submit">	
+</div>
+</form>
+
+</body>
+</html>

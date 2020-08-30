@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hello World!</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css"> 
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+
+	<style type="text/css">
+
+		body { background: lightgray; }
+		.container, .container-fluid { background: #fff }
+		.contact { width: 35%; }
+		.navbar { margin-bottom: 0; }
+
+		/*.nav > li > a { padding: 20px 15px; }*/
+	</style>
+</head>
+
+<body>
+		<nav  role="navigation">
+			<ul class="nav nav-pills">
+				<li role="presentation" class="active"><a href="#">Return</a></li>
+				<li role="presentation"><a href="#">About</a></li>
+				<li role="presentation"><a href="#">Portfolio</a></li>
+				<li role="presentation"><a href="#">Affiliates</a></li>
+				<li role="presentation"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+
+
+<nav class="navbar navbar-default">
+
+      <ul class="nav navbar-nav">
+      	<li><a class="navbar-brand" href="#">Brand</a></li>
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+       <li><a href="#">Link</a></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+</nav>
+
+<div class="container">	
+
+<h1>Hello Everyone!</h1>
+
+<button class="btn btn-default btn-lg">A button</button>
+<button class="btn btn-primary">Reg Size</button>
+<button class="btn btn-info btn-sm">Small Button</button>
+<button class="btn btn-danger btn-xs">Extra Small</button>
+<button class="btn btn-warning btn-lg">Warning</button>
+<button class="btn btn-success">Success!</button>
+
+<a href="#" class="btn btn-info btn-lg">A link</a>
+
+<div class="contact">
+	<h2>A form</h2>
+
+	<form>
+		<div class="form-group">
+		<label for="Name">Name:</label>
+		<input type="text" name="" class="form-control" id="Name">
+		</div>
+		<div class="form-group">
+		<label for="Email">Email:</label>
+		<input type="email" name="" class="form-control" id="Email">
+		</div>
+		<div class="form-group">
+		<label for="Password">Password:</label>
+		<input type="password" name="" class="form-control" id="Password">
+		</div>
+		<div class="form-group">
+		<label for="Other">Other:</label>
+		<textarea class="form-control" id="Other"></textarea>
+		</div>
+	</form>
+</div>
+
+	<h2>Inline Forms</h2>
+
+	<form class="form-inline">
+		<div class="form-group">
+		<label for="Name">Name:</label>
+		<input type="text" name="" class="form-control" id="Name" placeholder="John Smith">
+		</div>
+		<div class="form-group">
+		<label for="Email">Email:</label>
+		<input type="email" name="" class="form-control" id="Email" placeholder="john@email.com" required>
+		</div>
+		<button type="submit" class="btn btn-default">Send</button>
+	</form>
+				<br>
+
+		<form class="form-inline">
+		<div class="form-group">
+		<label for="Name" class="sr-only">Name:</label>
+		<input type="text" name="" class="form-control" id="Name" placeholder="John Smith">
+		</div>
+		<div class="form-group">
+			<label for="Email" class="sr-only">Email:</label>
+			<input type="email" id="Email" placeholder="john@email.com" class="form-control" required>
+		</div>
+		<div class="form-group">
+		<label for="Password" class="sr-only">Password:</label>
+		<input type="password" name="" class="form-control" id="Pasword" placeholder="Password" required>
+		</div>
+		<div class="checkbox">
+		<label>
+		<input type="checkbox" required> I Agree
+		</label>
+		</div>
+		<button type="submit" class="btn btn-default">Send</button>
+	</form>
+
+</div>
+
+</body>
+</html>

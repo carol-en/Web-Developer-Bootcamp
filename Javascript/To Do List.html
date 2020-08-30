@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+</head>
+<body>
+<h1>Todo List</h1>
+
+	<ul>
+		<li>"new" - Add A ToDo</li>
+		<li>"list" - View ToDos</li>
+		<li>"delete" - Remove specific todo</li>
+		<li>"quit" - Quit App</li>
+	</ul>
+
+</body>
+
+	<script type="text/javascript">
+	// window.setTimeout(function() {
+		  
+		var todos = ["Buy new Turtle"];
+
+		var input = prompt("What would you like to do?");
+
+
+		while(input !=="quit") {
+				// handle input
+				if(input === "list") {
+					addTodo();
+				} else if(input === "new") { 
+					newTodo();
+				} else if(input === "delete") { 
+					deleteTodo();
+				}
+
+				//ask again for new input
+				input =	prompt("What would you like to do?");
+								}
+		console.log("OK, you quit the app!");
+
+
+			// FUNCTIONS FOR WHILE LOOP!! ––––––––––––
+
+			// ADD NEW TODO FUNCTION
+			function addTodo() {
+			console.log("************");
+			todos.forEach(function(todo, In) {
+			console.log(In + ": " + todo);
+			  });
+			console.log("************");
+			}
+
+			// NEW TODO FUCNTION
+			function newTodo() {
+			// Ask new todo
+			var newTodo= prompt("Enter new todo");
+			// Add the new todo
+			todos.push(newTodo);
+			//Confirm added
+			console.log("Item added");
+			}
+
+			// DELETE TO DO FUNCTION
+			function deleteTodo() {
+			// Ask for article to be deleted
+			var index = prompt("What list number would you like to delete?")
+			// Delete it using a thing called splice()
+			todos.splice(index, 1);
+			//Confirm item was deleted
+			console.log("Item was deleted");
+			}
+
+	// }, 500); //Time Out
+
+
+
+	</script>
+</html>
